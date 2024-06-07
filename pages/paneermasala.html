@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Masala Recipe</title>
+
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-section {
+    flex: 1 1 300px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.content-section {
+    flex: 2;
+    padding: 40px;
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.content-section h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.step:hover {
+    background-color: #fff3e0;
+    transform: translateY(-5px);
+}
+
+.step h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #ff7e5f;
+}
+
+.step p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        display: none;
+    }
+
+    .content-section {
+        border-radius: 15px;
+    }
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="https://imgs.search.brave.com/jh4MSZFdkrHTf4Ee7xAiasgVDEZPBN9bCFdBfzlkhdA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMi8y/MDE3LzAxL3BhbmVl/ci5qcGc_cXVhbGl0/eT05MCZyZXNpemU9/NTU2LDUwNQ" alt="Paneer Masala">
+        </div>
+        <div class="content-section">
+            <h1>Paneer Masala Recipe</h1>
+            <div class="steps">
+                <div class="step">
+                    <h2>Step 1</h2>
+                    <p>Heat oil in a pan and sauté onions until golden brown.</p>
+                </div>
+                <div class="step">
+                    <h2>Step 2</h2>
+                    <p>Add ginger-garlic paste and sauté for another minute.</p>
+                </div>
+                <div class="step">
+                    <h2>Step 3</h2>
+                    <p>Add chopped tomatoes and cook until they become soft.</p>
+                </div>
+                <div class="step">
+                    <h2>Step 4</h2>
+                    <p>Mix in the spices: turmeric, chili powder, coriander powder, and garam masala.</p>
+                </div>
+                <div class="step">
+                    <h2>Step 5</h2>
+                    <p>Add the paneer cubes and mix well. Cook for 5-7 minutes.</p>
+                </div>
+                <div class="step">
+                    <h2>Step 6</h2>
+                    <p>Garnish with fresh coriander leaves and serve hot.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

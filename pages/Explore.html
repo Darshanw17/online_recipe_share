@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards - SpiceStories</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ff6347;
+    padding: 5px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin-left: 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #ff4500;
+}
+
+.navbar .nav-links .button {
+    background-color: #fff;
+    color: #ff6347;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links .button:hover {
+    background-color: #ff4500;
+    color: #fff;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #666;
+}
+/* card hover effect*/
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card:hover img {
+    filter: brightness(0.9);
+}
+
+.card:hover .card-content h3 {
+    color: #ff6347;
+}
+
+
+footer {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (min-width: 600px) {
+    .cards-container {
+        gap: 30px;
+    }
+
+    .card {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 900px) {
+    .cards-container {
+        gap: 40px;
+    }
+
+    .card {
+        max-width: 200px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SpiceStories</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="contact us.html">Contact</a></li>
+                <li><a href="#signup" class="button">Sign Up</a></li>
+                <li><a href="#signin" class="button">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <div class="card">
+                <a href="Sahi.html">
+                <img src="https://imgs.search.brave.com/iF2_P0Dk1zS5qSx2W0HSfIJ7-L3e1lYefbd6FiVUOCA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMi8y/MDE4LzA0L3BhbmVl/cl9jaGFybGllLXJp/Y2hhcmRzLWMyZGIy/NmIuanBnP3F1YWxp/dHk9OTAmcmVzaXpl/PTcwMCw0NjY" alt="Dish Image">
+                <div class="card-content">
+                    <h3>Sahi-Paneer</h3>
+                    <p>Ingrediants- paneer (Indian cottage cheese),tomatoes, onions, cashew nuts, and cream.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="paneermasala.html">
+                <img src="https://imgs.search.brave.com/2NMdxNyRzEyVCPUP8B3aypHFmedW0jqC0xY_EscqNVg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaW1tZWRpYXRl/LmNvLnVrL3Byb2R1/Y3Rpb24vdm9sYXRp/bGUvc2l0ZXMvMi8y/MDE3LzAxL3BhbmVl/ci5qcGc_cXVhbGl0/eT05MCZjcm9wPTVw/eCwxMzc4cHgsMzY2/M3B4LDI0NDBweCZy/ZXNpemU9NzAwLDQ2/Ng" alt="Dish Image">
+                <div class="card-content">
+                    <h3>Paneer-Masala</h3>
+                    <p>Ingrediants-  paneer cubes ,tomato and onion,garlic, ginger, green chilies.</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="recipe1.html">
+                <img src="https://imgs.search.brave.com/HHWIaGUEoiOsc5C9Mzy9lB5Dha5Aj8UzVHfR0Yd2BAo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWFuaGVhbHRo/eXJlY2lwZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzA3L3BhbGFrLXBh/bmVlci0wMTIuanBn/LndlYnA" alt="Dish Image">
+                <div class="card-content">
+                    <h3>Palak-Panner</h3>
+                    <p>Ingrediants- paneer (Indian cottage cheese),green spinach (palak),garlic, ginger, green chilies. </p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="recipe1.html">
+              <img src="https://imgs.search.brave.com/kvhbtJ6zEcaPOvg6Xg9_KL1RCAbUdZD1qm29g4wnS3o/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9teWZv/b2RzdG9yeS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjEv/MDkvUGF2LUJoYWpp/LTMtODAweDYxNy5q/cGc" alt="Dish Image">
+              <div class="card-content">
+                  <h3>Paav-Bhaji</h3>
+                  <p> Ingrediants - potatoes, peas, tomatoes, and bell peppers, buttered bread rolls (paav).
+                    </p>
+              </div>
+          </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RecipeShare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
